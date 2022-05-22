@@ -1,0 +1,29 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    --orange: #EB8C00;
+    --white: #F1F0FF;
+    --white-grey: #DCDCE5;
+    --black: #13131A;
+    --dark-grey: #737380;
+    --light-grey: #A8A8B3;
+
+    font-size: 63.5%; /* 1rem = 10px */
+
+}
+
+body {
+    height: 100vh;
+    /* display: flex;
+    flex-wrap: wrap; */
+    background: var(--white);
+}
+
+a {
+    text-decoration: none;
+    color: #41414D;
+}
