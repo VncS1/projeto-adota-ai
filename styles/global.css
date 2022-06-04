@@ -2,6 +2,10 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+
+    overflow-x: hidden;
+
+    font-family: 'Roboto', sans-serif;
 }
 
 html {
@@ -17,7 +21,6 @@ html {
 }
 
 body {
-    height: 100vh;
     /* display: flex;
     flex-wrap: wrap; */
     background: var(--white);
