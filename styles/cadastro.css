@@ -1,0 +1,142 @@
+* {
+    overflow: hidden;
+}
+body {
+    width: 100%;
+    height: 100vh;
+
+    font-family: 'Roboto', sans-serif;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+main {
+    width: 75%;
+    height: 75%;
+
+    box-shadow: 0 0 10px rgba(0,0,0,0.3);
+    border-radius: .5rem;
+
+    display: flex;
+    flex-wrap: wrap;
+
+    padding: 3rem 5rem;
+
+    background: var(--white);
+}
+
+section.left-box {
+    width: clamp(50%, 50%, 50%);
+
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+
+    justify-content: center;
+    
+}
+
+.left-box .textos h2 {
+    font-family: 'Roboto', sans-serif;
+    font-size: 3.25rem;
+    font-weight:600;
+    color: var(--black);
+
+    line-height: 5rem;
+
+}
+
+.left-box .textos p { 
+    font-size: 1.55rem;
+    color: var(--dark-grey);
+    line-height: 3.2rem;
+
+    margin-bottom: 2rem;
+}
+
+.left-box div.back a {
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.5rem;
+    font-weight: 700;
+
+    display: flex;
+    align-items: center;
+}
+
+.left-box img.logo {
+    width: clamp(25rem, 50%, 40rem);
+}
+
+.right-box{ 
+    width: clamp(50%, 50%, 50%);
+    justify-content:flex-start;
+}
+
+.right-box form {
+
+    height: 90%;
+    width: 90%;
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+
+    padding: 5rem 0;
+
+
+}
+
+.right-box form input {
+    outline: none;
+    border: 1px solid var(--white-grey);
+
+    border-radius: .75rem;
+
+    padding: 1.25rem;
+    margin-bottom: 2.5rem;
+
+    font-size: 1.75rem;
+    color: var(--dark-grey);
+
+}
+
+.right-box form input::placeholder {
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.75rem;
+    font-weight: 400;
+    color: var(--light-grey);
+}
+
+.right-box form button {
+    border: 0;
+    border-radius: .75rem;
+
+    background-color: var(--orange);
+
+    color: var(--white);
+
+    padding: 1.25rem;
+
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+
+}
+
+@media(max-width: 1024px) {
+    main {
+        flex-direction: column;
+        height: auto;
+    }
+    .left-box {
+        width: 100%;
+    }
+
+    
+
+    .right-box {
+        width: 100%;
+    }
+}
